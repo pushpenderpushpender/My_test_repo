@@ -1,0 +1,12 @@
+---
+- name: service
+  hosts: dtl-az-w2016
+  tasks:
+    - name: Start service bits
+      service:
+        name: bits
+        state: stopped
+    - name: Start service bits
+      service:
+        name: bits
+        state: started
